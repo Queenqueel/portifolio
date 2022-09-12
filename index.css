@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Open+Sans&family=Poppins&family=Roboto&display=swap');
+
+:root {
+    --pink: rgba(216, 80, 137, 0.747);
+    --light-pink: rgb(224, 168, 192);
+    --whitesmoke: rgba(240, 240, 240, 0.671);
+    --light-gray: rgb(41, 40, 40);
+    --black: #111;
+}
+
+
 body {
     color: whitesmoke;
-    background-color: #111;
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--black);
+    font-family: "Mulish", sans-serif;
     font-size: 1rem;
 }
 
@@ -13,8 +24,12 @@ ul {
     padding: 1rem;
 }
 
+.contato:hover {
+    color: #25D366;
+}
+
 h1 {
-    color: rgba(216, 80, 137, 0.747)
+    color: var(--pink);
 }
 
 a {
@@ -26,11 +41,19 @@ header img {
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    border: 0.3rem solid rgba(216, 80, 137, 0.747)
+    border: 0.3rem solid var(--pink);
 }
 
 .center {
     text-align: center;
+}
+
+#conteudo {
+    margin-top: 1.5rem;
+    box-shadow: 0 0 5px 0 var(--pink);
+    background-color: var(--light-gray);
+    padding: 0.5rem;
+    border-radius: 10px;
 }
 
 footer {
@@ -53,21 +76,51 @@ footer img {
 }
 
 .container {
-    padding: 0rem 3rem;
+    padding: 1rem 6rem;
 }
 
 nav a:hover {
-    color: rgba(216, 80, 137, 0.747);
+    color: var(--pink);
     font-size: 0.9rem;
     transition: 0.1s;
 }
 
 footer a:hover {
-    color: rgba(216, 80, 137, 0.747);
+    color: var(--pink);
 }
 
 footer img:hover {
-    width: 1.4rem;
-    height: 1.4rem;
+    width: 1.7rem;
+    height: 1.7rem;
     transition: 0.1s;
+}
+
+h3 {
+    letter-spacing: 0.2rem;
+    font-size: 140%;
+    margin-top: 1rem;
+    padding-left: 0.5rem;
+
+}
+
+h4 {
+    font-style: italic;
+    margin-top: 1.4rem;
+    padding-left: 0.5rem;
+}
+
+p {
+    padding-left: 0.5rem;
+    line-height: 25px;
+}
+
+.ano {
+    font-size: 0.7rem;
+    color: var(--whitesmoke);
+    text-transform: uppercase;
+}
+
+i {
+    margin: 0 1px;
+    font-size: 1.3rem;
 }
